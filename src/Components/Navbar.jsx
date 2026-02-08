@@ -6,23 +6,27 @@ const Navbar = () => {
   return (
     <div>
       <div>
-        <div className='h-screen bg-cover bg-center' style={{ backgroundImage: `url(${bgImage}` }} >
-          <div>
+        {/* inset 0 will cover the bg image to black */}
+        <div className='h-screen bg-cover bg-center  ' style={{ backgroundImage: `url(${bgImage})` }} >
+            <div className="absolute inset-0 bg-black opacity-60"></div>
+            {/* nav bar */}
+          <div className='relative z-10 flex  justify-between' >
             <img className='w-40' src={logo} alt="image" />
-            <button className='bg-red-600 text-white border-'>singin</button>
+            <button className='bg-red-700 rounded-md  text-white rounded-md'>singin</button>
           </div>
           {/* heading section */}
-          <div className=' text-center text-white '>
+          <div className=' relative z-10 text-center text-white '>
             <h1 className='font-bold  text-7xl '>Unlimited movies,TV  <br />shows, and more</h1>
             <h2 className='font-semibold text-3xl mt-10'>Starts at USD 2.99. Cancel anytime.</h2>
 
             <p className='mt-10 text-2xl'>Ready to watch? Enter your email to create or restart your membership.</p>
+            {/* input of hero section */}
+          <div className=''>
+            <input className='py-5 px-20' type="email" placeholder='Email Address ' />
+            <button className='bg-red-700 text-white rounded-md py-5 px-25' >Get Started</button>
           </div>
-          {/* input of hero section */}
-          <div>
-            <input type="text" placeholder='Email Address ' />
-            <button>Get Started <span>></span> </button>
           </div>
+          
           <div>
 
           </div>
