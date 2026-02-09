@@ -8,23 +8,23 @@ const Navbar = () => {
     <div className=''>
       <div>
         {/* inset 0 will cover the bg image to black */}
-        <div className='h-screen bg-cover bg-center  ' style={{ backgroundImage: `url(${bgImage})` }} >
+        <div className='h-screen bg-cover bg-center relative' style={{ backgroundImage: `url(${bgImage})` }} >
             <div className="absolute inset-0 bg-black opacity-60"></div>
             {/* nav bar */}
-          <div className='relative z-10 flex  justify-between' >
-            <img className='h-20' src={logo} alt="image"/>
-            <button className='bg-red-700 h-14 w-36 px-3 py-1  text-white rounded-md'>signin</button>
+          <div className='relative z-10 flex justify-between items-center px-12 pt-6' >
+            <img className='h-16' src={logo} alt="image"/>
+            <button className='bg-red-600 hover:bg-red-700 px-5 py-2 text-white rounded-md font-semibold'>Sign in</button>
           </div>
           {/* heading section */}
-          <div className=' relative z-10 text-center text-white '>
-            <h1 className='font-bold  text-7xl '>Unlimited movies,TV  <br />shows, and more</h1>
+          <div className='relative z-10 flex flex-col justify-center items-center text-center text-white h-[80vh] px-6'>
+            <h1 className='text-5xl md:text-6xl font-bold max-w-3xl'>Unlimited movies,TV  <br />shows, and more</h1>
             <h2 className='font-semibold text-3xl mt-10'>Starts at USD 2.99. Cancel anytime.</h2>
 
             <p className='mt-10 text-2xl '>Ready to watch? Enter your email to create or restart your membership.</p>
             {/* input of hero section */}
-          <div className=''>
+          <div className='flex items-center gap-3'>
             <input className='py-5 px-20' type="email" placeholder='Email Address ' />
-            <button className='bg-red-700 text-white rounded-md py-5 px-25 flex items-center gap-3' ><span>Get Started </span><span><PiGreaterThanBold /></span></button>
+            <button className='bg-red-700 text-white rounded-md py-5 px-25 flex items-center gap-3 font-bold font-semibold text-2xl' ><span >Get Started </span><span><PiGreaterThanBold /></span></button>
           </div>
           </div>
           
