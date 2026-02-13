@@ -48,12 +48,13 @@ const Trendingsection = () => {
           border: "none",
           padding: "10px",
           cursor: "pointer",
+          marginLeft:"50px",
         }}>
           <FaLessThan/>
         </button>
 
       </span>
-              <div className='flex overflow-auto  gap-10 items-center' ref={scrollref}>
+              <div className='flex overflow-auto ml-60 gap-10 items-center' ref={scrollref}>
                 
               <img className='h-70 w-50 mt-20 rounded-3xl   ' src={image1}   alt="image" />
               <img className='h-70 w-50 mt-20 rounded-3xl' src={image2}   alt="image" />

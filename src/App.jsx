@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection'
 import Trendingsection from './Components/Trendingsection'
 import Reasons from './Components/reasons'
+import Askedquestion from './Components/Askedquestion'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
        <Herosection/>
        <Trendingsection/>
        <Reasons/>
+       <Askedquestion/>
     </>
   )
 }
