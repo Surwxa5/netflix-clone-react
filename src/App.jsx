@@ -4,6 +4,7 @@ import Herosection from './Components/Herosection'
 import Trendingsection from './Components/Trendingsection'
 import Reasons from './Components/reasons'
 import Askedquestion from './Components/Askedquestion'
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
        <Trendingsection/>
        <Reasons/>
        <Askedquestion/>
+       <Footer/>
     </>
   )
 }
