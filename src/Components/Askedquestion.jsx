@@ -1,5 +1,10 @@
 import React from 'react'
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 const Askedquestion = () => {
   const FAQData =[
     {
@@ -31,14 +36,22 @@ const Askedquestion = () => {
   return (
     <div className=' bg-black text-white pb-20'>
       <div className='ml-45 mr-45 py-2 '>
-      <h1 className=' text-3xl'>Frequently Asked Questions</h1>
+      <h1 className='text-3xl'>Frequently Asked Questions</h1>
 
     
 
     {FAQData.map((data)=>(
         <div >
-      <h1 className='text-2xl mb-5 mt-4'>{data.title}</h1>
-      <p>{data.description}</p>
+      
+          <Accordion type="single" collapsible className="w-full">
+              {/* */}
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-2xl mb-5 mt-4">{data.title}</AccordionTrigger>
+                <AccordionContent>
+                  {data.description}
+                </AccordionContent>
+              </AccordionItem>
+              </Accordion>
 
        </div>
     ))}

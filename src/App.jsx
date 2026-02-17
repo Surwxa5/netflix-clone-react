@@ -5,6 +5,7 @@ import Trendingsection from './Components/Trendingsection'
 import Reasons from './Components/reasons'
 import Askedquestion from './Components/Askedquestion'
 import Footer from './Components/Footer'
+import Accodian from './Components/accodian'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
        <Reasons/>
        <Askedquestion/>
        <Footer/>
+      
     </>
   )
 }
