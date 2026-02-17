@@ -31,8 +31,8 @@ const Trendingsection = () => {
     }
     // const cards = Array.from({ length: 15}, (_, i) => i + 1);
   return (
-    <div>
-       <div className='relative z-10'>
+    <div className='bg-black text-white '>
+       <div className='relative z-10 mr-45 ml-45'>
               <h1 className='font-bold text-3xl body-section  '>Trending Now</h1>
               <div className='flex  items-center'>
                 <span className='
@@ -48,7 +48,7 @@ const Trendingsection = () => {
           border: "none",
           padding: "10px",
           cursor: "pointer",
-          marginLeft:"50px",
+          marginLeft:"20px",
         }}>
           <FaLessThan/>
         </button>
@@ -78,6 +78,7 @@ const Trendingsection = () => {
           border: "none",
           padding: "10px",
           cursor: "pointer",
+          margin:"20px",
         }}>
              <FaGreaterThan />
               </button>

@@ -6,7 +6,7 @@ import reasonimage4 from '../Images/emoji.jpg'
 
 const Reasons = () => {
   return (
-    <div className=''>
+    <div className='bg-black text-white pb-20 py-10'>
       <h1 className='text-3xl font-bold ml-60 mt-10'>More Reasons to Join</h1>
       <div className='flex mt-5 ml-45 mr-45  gap-3'>
       <div className='relative px-7 py-7 rounded-2xl bg-gray-700 shadow-2xl w-80 h-100'>
